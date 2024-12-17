@@ -4,54 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Anniversary</title>
-    <style>
-        /* Basic reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #fff;
-            color: #000;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        /* Container for the text */
-        .intro-text {
-            font-size: 2rem;
-            text-align: center;
-            opacity: 0; /* Start invisible */
-            animation: fadeInOut 4s ease-in-out forwards;
-        }
-
-        /* Keyframes for fade-in and fade-out */
-        @keyframes fadeInOut {
-            0% {
-                opacity: 0; /* Invisible at the start */
-            }
-            25% {
-                opacity: 1; /* Fully visible */
-            }
-            75% {
-                opacity: 1; /* Stay visible */
-            }
-            100% {
-                opacity: 0; /* Fade out completely */
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Link to external CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> <!-- Include jQuery -->
 </head>
 <body>
-    <!-- Intro Text -->
-    <div class="intro-text">
-        Happy Anniversary, Hanna ❤️
+    <!-- Messages Container -->
+    <div id="messages-container">
+        <div class="message">Happy Anniversary, Hanna ❤️</div>
+        <div class="message">This year has been amazing ✨</div>
+        <div class="message">Thank you for everything 🥰</div>
+        <div class="message">Let’s celebrate together 🎉</div>
     </div>
+    <script src="assets/js/script.js"></script> <!-- Link to external JavaScript -->
 </body>
 </html>
