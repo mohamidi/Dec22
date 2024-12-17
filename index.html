@@ -5,22 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Anniversary</title>
     <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
+            background-color: #fff;
+            color: #000;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Container for the text */
+        .intro-text {
+            font-size: 2rem;
             text-align: center;
-            background-color: #f9f9f9;
-            color: #333;
+            opacity: 0; /* Start invisible */
+            animation: fadeInOut 4s ease-in-out forwards;
         }
-        h1 {
-            color: #e91e63;
-        }
-        p {
-            font-size: 18px;
+
+        /* Keyframes for fade-in and fade-out */
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0; /* Invisible at the start */
+            }
+            25% {
+                opacity: 1; /* Fully visible */
+            }
+            75% {
+                opacity: 1; /* Stay visible */
+            }
+            100% {
+                opacity: 0; /* Fade out completely */
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Happy Anniversary, Hanna!</h1>
-    <p>This website is my small gift to celebrate our special day. I hope you love it!</p>
+    <!-- Intro Text -->
+    <div class="intro-text">
+        Happy Anniversary, Hanna ❤️
+    </div>
 </body>
 </html>
